@@ -56,7 +56,7 @@
 #ifdef __CYGWIN__
 #include <io.h>
 #endif
-#ifdef WIN32
+#ifdef _MSC_VER
 #include <sys/utime.h>
 #include <winsock2.h>
 #pragma comment(lib, "ws2_32.lib")
@@ -73,7 +73,7 @@ typedef long long INT64;
 typedef unsigned long long UINT64;
 #endif
 
-#ifdef _WIN32
+#ifdef _NODPS
 # define NODEPS
 #endif
 
