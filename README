@@ -1,0 +1,9 @@
+This archive contains a modified version of dcraw,
+provided originally by Dave Coffin. In addition to
+mapping raw images to PNM or TIFF, this version creates
+a text-encoded lookup table that is used to map the
+intermediate linear gamma image into the target color
+space, sRGB by default. Note that this version is only
+used for JPEG-internal purposes and is not meant for
+redistribution. Specifically, check the limitations at
+the beginning of dcraw.c.
